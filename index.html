@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр - Предложение на работу</title>
+    <meta name="description" content="Офферное предложение на работу">
+    <link rel="shortcut icon" type="image/svg" href="./favicon.svg">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+
+    <div class="header__container">
+        <header class="header">
+            <a href="./" class="link">
+                <img src="./images/icon/logo.svg" alt="Logotype" class="header__logo" loading="lazy">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__links">
+                    <li class="header__li">
+                        <a href="./#service" class="link header__link">О Себе</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="./#example" class="link header__link">Мои работы</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="./#contact" class="link header__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__container-button">
+                <button id="popupContact" class="button header__button button__contact-open" type="button">Написать мне</button>
+                <button class="header__burger" type="button"></button>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="main">
+
+        <div class="offer__container" id="offer">
+            <section class="offer">
+
+                <div class="offer__content">
+                    <h1 class="offer__title">Я являюсь <span>веб разработчиком</span></h1>
+                    <p class="offer__description">Знания figma, css, html, js и в перспективе react</p>
+                    <button id="popupContact" class="button offer__button button__contact-open" type="button">Написать мне</button>
+                </div>
+
+                <img src="./images/person.png" alt="Offer" class="offer__image" loading="lazy">
+
+            </section>
+        </div>
+
+        <div class="example__container" id="example">
+            <section class="example">
+                <h2 class="service__title">Наши работы</h2>
+
+                <ul class="cards">
+                    <li class="example__card">
+                        <img src="./images/icon/p2s.svg" alt="Post2Soc example" class="example__image" loading="lazy">
+                        <a class="link example__link" href="//post2soc.com/ru/" target="_blank">Перейти на сайт</a>
+                        <p class="example__description">UI / UX дизайн, верстка, разработка ТЗ</p>
+                        <h3 class="example__title">Отложенный постинг ВК и Телеграм</h3>
+                    </li>
+
+                    <li class="example__card">
+                        <img src="./images/icon/minecraft-launcher.svg" alt="WotInside example"
+                            class="example__image" loading="lazy">
+                        <a class="link example__link" href="https://wotinside.com/ru/" target="_blank">Перейти на сайт</a>
+                        <p class="example__description">Обновление UI / UX дизайн, разработка ТЗ</p>
+                        <h3 class="example__title">Моды для игре по танкам</h3>
+                    </li>
+
+                    <li class="example__card">
+                        <img src="./images/icon/englisher.svg" alt="WotGive example" class="example__image"
+                            loading="lazy">
+                        <a class="link example__link" href="https://wotgive.com/" target="_blank">Перейти на сайт</a>
+                        <p class="example__description">Обновление UI / UX дизайн, разработка ТЗ</p>
+                        <h3 class="example__title">Продажа предметов из танков</h3>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <div class="advantages__container" id="advantages">
+            <section class="advantages">
+                <h2 class="advantage__title">Наши преимущества</h2>
+
+                <ul class="cards advantages__cards">
+                    <li class="advantage__card">
+                        <img src="./images/icon/advantage-1.svg" alt="Post2Soc example" class="advantage__image"
+                            loading="lazy">
+                        <h3 class="advantage__card-title">-</h3>
+                        <p class="advantage__descrioption">-</p>
+                    </li>
+
+                    <li class="advantage__card">
+                        <img src="./images/icon/advantage-2.svg" alt="Post2Soc example" class="advantage__image"
+                            loading="lazy">
+                        <h3 class="advantage__card-title">-</h3>
+                        <p class="advantage__descrioption">-.</p>
+                    </li>
+
+                    <li class="advantage__card">
+                        <img src="./images/icon/advantage-3.svg" alt="Post2Soc example" class="advantage__image"
+                            loading="lazy">
+                        <h3 class="advantage__card-title">-</h3>
+                        <p class="advantage__descrioption">-.</p>
+                    </li>
+
+                    <li class="advantage__card">
+                        <img src="./images/icon/advantage-4.svg" alt="Post2Soc example" class="advantage__image"
+                            loading="lazy">
+                        <h3 class="advantage__card-title">-</h3>
+                        <p class="advantage__descrioption">-.</p>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+
+        <section class="contact" id="contact">
+            <div class="contact__info">
+                <h2 class="contact__title">Контакты</h2>
+                <p class="contact__description">Ответим как можно быстрее</p>
+                <ul class="contact__cards">
+                    <li class="contact__card">
+                        <img src="./images/icon/contact-1.svg" alt="" class="contact__icon" loading="lazy">
+                        <p class="contact__card-description">Кнопки ниже для связи WhatsApp и Telegram</p>
+                    </li>
+
+                    <li class="contact__card">
+                        <img src="./images/icon/contact-3.svg" alt="" class="contact__icon" loading="lazy">
+                        <p class="contact__card-description">Отвечаю по московскому времени с 12:00 до 20:00 МСК</p>
+                    </li>
+                </ul>
+
+                <div class="contact__container">
+                    <div class="contact__buttons">
+                        <button onclick="blankUrl('')" class="button contact__button-wa"
+                            type="button">Написать в WhatsApp</button>
+                        <button onclick="blankUrl('')" class="button contact__button-tg"
+                            type="button">Написать в Telegram</button>
+                    </div>
+
+                    <img src="./images/icon/circle.svg" alt="" class="contant__cicrcle" loading="lazy">
+
+                </div>
+            </div>
+
+            <img src="./images/icon/contact.svg" alt="" class="contact__image" loading="lazy">
+        </section>
+    </main>
+
+    <div class="footer__container">
+        <footer class="footer">
+            <ul class="footer__links">
+                <p class="footer__desctiption">© Александр М 2023</p>
+            </ul>
+
+            <ul class="footer__links">
+                <button class="button footer__button button__contact-open" type="button">Написать мне</button>
+                <a href="#" class="link footer__link">Пользовательское соглашение</a>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="popup popup__contact">
+        <div class="popup__group">
+            <button class="button popup__close" type="button"></button>
+            <h2 class="popup__title">Напишите мне</h2>
+            <button onclick="blankUrl('')" class="button popup__button-wg" type="button">Написать в
+                WhatsApp</button>
+            <button onclick="blankUrl('')" class="button popup__button-tg" type="button">Написать в
+                Telegram</button>
+        </div>
+    </div>
+
+    <div class="menu menu__right">
+        <div class="menu__group">
+            <button class="button popup__close" type="button"></button>
+            <h2 class="menu__title">Меню</h2>
+            <nav class="header__nav">
+                <ul class="header__links" style="display: flex; flex-direction: column; gap: 20px;">
+                    <li class="header__li">
+                        <a href="./index.html#service" class="link header__link">Наши услуги</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="./index.html#example" class="link header__link">Наши работы</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="./index.html#advantages" class="link header__link">О нас</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="./index.html#contact" class="link header__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
