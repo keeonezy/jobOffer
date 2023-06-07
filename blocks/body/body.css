@@ -1,5 +1,44 @@
+@keyframes around {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
 * {
     scroll-behavior: smooth;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 
 .button {
@@ -12,9 +51,10 @@
     text-decoration: none;
 }
 
-.body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+.logo {
+    width: 150px;
+    height: 49px;
+    cursor: pointer;
 }
 
 
@@ -48,12 +88,6 @@
     .header {
         margin: 0 20px;
     }
-}
-
-.header__logo {
-    width: 150px;
-    height: 49px;
-    cursor: pointer;
 }
 
 .header__links {
@@ -131,6 +165,25 @@
     }
 }
 
+
+.runString {
+    background-color: #011cae;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.runString__text {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    color: #ffffff;
+    animation: marquee-text 10s infinite linear;
+}
 
 
 .offer__container {
@@ -221,6 +274,7 @@
 
 .offer__image {
     object-fit: contain;
+    animation: zoom 1s infinite alternate;
 }
 
 @media screen and (max-width: 1040px) {
@@ -557,7 +611,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 @media screen and (max-width: 1240px) {
@@ -685,6 +739,7 @@
 
 .contant__cicrcle {
     max-width: 175px;
+    animation: around 1s linear infinite;
 }
 
 .contact__image {
@@ -703,6 +758,51 @@
     .contact__image {
         display: none;
     }
+}
+
+.contact__cards1 {
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+.contact__card1 {
+    padding: 15px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+}
+
+.contact__desc {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
 }
 
 
