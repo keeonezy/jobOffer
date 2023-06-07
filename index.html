@@ -222,9 +222,9 @@
 
                 <div class="contact__container">
                     <div class="contact__buttons">
-                        <button onclick="blankUrl('')" class="button contact__button-wa" type="button">Написать в
+                        <button onclick="blankUrl('https://wa.me/79363142131')" class="button contact__button-wa" type="button">Написать в
                             WhatsApp</button>
-                        <button onclick="blankUrl('')" class="button contact__button-tg" type="button">Написать в
+                        <button onclick="blankUrl('https://t.me/wild_aleksander')" class="button contact__button-tg" type="button">Написать в
                             Telegram</button>
                     </div>
 
@@ -269,9 +269,9 @@
         <div class="popup__group">
             <button class="button popup__close" type="button"></button>
             <h2 class="popup__title">Напишите мне</h2>
-            <button onclick="blankUrl('')" class="button popup__button-wg" type="button">Написать в
+            <button onclick="blankUrl('https://wa.me/79363142131')" class="button popup__button-wg" type="button">Написать в
                 WhatsApp</button>
-            <button onclick="blankUrl('')" class="button popup__button-tg" type="button">Написать в
+            <button onclick="blankUrl('https://t.me/wild_aleksander')" class="button popup__button-tg" type="button">Написать в
                 Telegram</button>
         </div>
     </div>
@@ -301,23 +301,5 @@
 
     <script src="./scripts/index.js"></script>
 </body>
-
-<script>
-    const elements = document.querySelectorAll('.offer__title span');
-
-    function redraw() {
-        for (let i = 0; i < elements.length; ++i) {
-            // массив с текстами, не ограниченный границами государств и законами материи
-            let arr = ['фронтендером', 'верстальщиком', 'веб дизайнером', 'веб разработчиком'];
-            // получение случайного значения из безграничного массива
-            let rand = Math.floor(Math.random() * arr.length);
-            elements[i].textContent = arr[rand];
-            elements[i].classList.remove('hide');
-        };
-
-        setTimeout(redraw, 3000);
-    }
-    redraw();
-</script>
 
 </html>

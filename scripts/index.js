@@ -77,3 +77,19 @@ openContactButton.forEach(element =>
 function blankUrl(url) {
     window.open(url, '_blank');
 }
+
+const elements = document.querySelectorAll('.offer__title span');
+
+function redraw() {
+    for (let i = 0; i < elements.length; ++i) {
+        // массив с текстами, не ограниченный границами государств и законами материи
+        let arr = ['фронтендером', 'верстальщиком', 'веб дизайнером', 'веб разработчиком'];
+        // получение случайного значения из безграничного массива
+        let rand = Math.floor(Math.random() * arr.length);
+        elements[i].textContent = arr[rand];
+        elements[i].classList.remove('hide');
+    };
+
+    setTimeout(redraw, 3000);
+}
+redraw();
